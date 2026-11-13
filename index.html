@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- ✏️ 1. Название сайта во вкладке браузера -->
+<title>Школа английского для IT</title>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(114235591, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/114235591" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#1b241f;background:#f6f7f4;line-height:1.55}
+  .w{max-width:880px;margin:0 auto;padding:0 20px}
+  header{background:#1f3a2c;color:#fff;padding:72px 0 64px}
+  h1{font-size:clamp(30px,6vw,48px);line-height:1.15;margin:0 0 16px}
+  header p{font-size:19px;color:#cfe0d4;margin:0 0 28px;max-width:600px}
+  .btn{display:inline-block;background:#ffdb4d;color:#1d1d1d;font-weight:700;font-size:18px;padding:16px 28px;border-radius:12px;text-decoration:none;border:0;cursor:pointer}
+  section{padding:56px 0}
+  h2{font-size:30px;margin:0 0 24px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:#fff;border:1px solid #d8ded7;border-radius:14px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:20px}
+  .card p{margin:0;color:#56625a}
+  .price{font-size:34px;font-weight:700;margin:6px 0}
+  form{background:#fff;border:1px solid #d8ded7;border-radius:16px;padding:26px;display:grid;gap:14px;max-width:460px}
+  label{display:grid;gap:6px;font-weight:600}
+  input{font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #c9d0c8}
+  .ok{background:#e1efe4;border-radius:12px;padding:16px;font-weight:600}
+  footer{padding:30px 0;color:#56625a;font-size:14px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="w">
+    <!-- ✏️ 3. Оффер: что вы предлагаете и какой результат получит клиент -->
+    <h1>Пройдите собеседование на английском через 3 месяца</h1>
+    <!-- ✏️ 4. Подзаголовок: для кого и почему вам можно верить -->
+    <p>Курс для разработчиков и тестировщиков: только лексика и ситуации из IT-собеседований. Занятия онлайн, 3 раза в неделю.</p>
+    <a class="btn" href="#form">Записаться на пробный урок</a>
+  </div>
+</header>
+
+<section>
+  <div class="w">
+    <h2>Почему у нас получается</h2>
+    <div class="cards">
+      <!-- ✏️ 5. Три преимущества или три боли клиента -->
+      <div class="card"><h3>Только IT-английский</h3><p>Разбираем вопросы с настоящих собеседований.</p></div>
+      <div class="card"><h3>Пробное интервью</h3><p>В конце курса — собеседование с носителем языка.</p></div>
+      <div class="card"><h3>Группы до 6 человек</h3><p>Каждый говорит на каждом занятии.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#e7eee6">
+  <div class="w">
+    <h2>Сколько стоит</h2>
+    <div class="cards">
+      <!-- ✏️ 6. Цена или тарифы -->
+      <div class="card"><h3>Курс 3 месяца</h3><div class="price">25 000 ₽</div><p>36 занятий, проверка домашних заданий, пробное интервью.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="form">
+  <div class="w">
+    <h2>Запишитесь на пробный урок</h2>
+    <form id="lead">
+      <label>Имя<input name="name" required placeholder="Тест"></label>
+      <label>Телефон<input name="phone" placeholder="+7 000 000-00-00"></label>
+      <button class="btn" type="submit">Записаться</button>
+      <p style="margin:0;color:#56625a;font-size:14px">Учебный сайт: заявки никуда не отправляются, настоящие данные не вводите.</p>
+    </form>
+    <div class="ok" id="thanks" hidden>Спасибо! Мы свяжемся с вами в течение дня.</div>
+  </div>
+</section>
+
+<footer><div class="w">Учебный проект · <!-- ✏️ 7. Ваше имя --> Хасанова Марьям</div></footer>
+
+<script>
+  // ✏️ 8. Номер вашего счётчика Метрики (8–9 цифр) вместо нулей
+  var COUNTER_ID = 114235591;
+
+  document.getElementById('lead').addEventListener('submit', function (e) {
+    e.preventDefault();
+    // Сообщаем Метрике о заявке: цель «Целевое событие» с идентификатором lead
+    if (window.ym && COUNTER_ID) { ym(COUNTER_ID, 'reachGoal', 'lead'); }
+    this.hidden = true;
+    document.getElementById('thanks').hidden = false;
+  });
+</script>
+</body>
+</html>
